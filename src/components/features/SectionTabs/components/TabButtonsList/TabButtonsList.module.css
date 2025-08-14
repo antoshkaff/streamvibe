@@ -1,0 +1,20 @@
+.list {
+    display: flex;
+    border: 1px solid var(--color-black-15);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--color-black-06);
+}
+
+@media (max-width: 1440px) {
+    .list {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .wide {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

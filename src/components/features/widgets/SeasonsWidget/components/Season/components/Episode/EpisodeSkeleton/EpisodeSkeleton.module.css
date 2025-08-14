@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.episode {
+    height: 200px;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .episode {
+        height: 188px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        row-gap: 20px;
+    }
+
+    .episode {
+        height: 266px;
+        width: 100%;
+    }
+}

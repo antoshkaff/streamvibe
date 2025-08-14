@@ -1,0 +1,24 @@
+.pageContent {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding-block: 50px 150px;
+}
+
+.itemsList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+@media (max-width: 1440px) {
+    .pageContent {
+        padding-block: 40px 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pageContent {
+        padding-block: 40px 80px;
+    }
+}

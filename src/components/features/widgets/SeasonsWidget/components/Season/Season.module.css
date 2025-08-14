@@ -1,0 +1,98 @@
+.season {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 10px;
+    background-color: var(--color-black-06);
+    padding: 32px 50px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.actionButton {
+    height: 52px;
+    aspect-ratio: 1;
+    border: 1px solid var(--color-black-15);
+    border-radius: 50%;
+    background-color: var(--color-black-08);
+}
+
+.actionButton svg {
+    height: 20px;
+    aspect-ratio: 1;
+}
+
+.seasonData {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.seasonTitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.seasonEpisodes {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--color-gray-60);
+}
+
+.episodeList {
+    display: flex;
+    flex-direction: column;
+}
+
+.episodeItem {
+    border-top: 1px solid var(--color-black-15);
+}
+
+@media (max-width: 1440px) {
+    .season {
+        row-gap: 24px;
+        padding: 27px 40px;
+    }
+
+    .actionButton {
+        height: 44px;
+    }
+
+    .seasonTitle {
+        font-size: 20px;
+    }
+
+    .seasonEpisodes {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .season {
+        row-gap: 20px;
+        padding: 26px 20px;
+    }
+
+    .seasonTitle {
+        font-size: 16px;
+    }
+
+    .seasonEpisodes {
+        font-size: 14px;
+    }
+
+    .episodeItem {
+        border-top: none;
+    }
+
+    .episodeList {
+        row-gap: 20px;
+    }
+}

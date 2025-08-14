@@ -1,0 +1,30 @@
+.button {
+    border-radius: 6px;
+    color: var(--color-gray-60);
+    background-color: transparent;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    transition:
+        background-color var(--transition-duration),
+        color var(--transition-duration);
+}
+
+.active {
+    color: var(--color-white);
+    background-color: var(--color-black-12);
+}
+
+@media (max-width: 1440px) {
+    .button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (hover: hover) {
+    .button:not(.active):hover {
+        color: var(--color-white);
+    }
+}

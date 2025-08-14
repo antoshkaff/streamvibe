@@ -1,0 +1,149 @@
+.episodeContainer {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    padding-block: 50px;
+}
+
+.episodeNumber {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--color-gray-60);
+}
+
+.episode {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+}
+
+.episodeImageWrapper {
+    height: 118px;
+    width: 172px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-black-15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.episodeImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.episode__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    width: 100%;
+}
+
+.episode__header {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: space-between;
+}
+
+.episode__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.episode__runtime {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-black-15);
+    border-radius: 8px;
+    background-color: var(--color-black-08);
+    color: var(--color-gray-60);
+    padding: 8px 10px;
+}
+
+.episode__runtime img {
+    height: 1.5em;
+    aspect-ratio: 1;
+}
+
+.episode__overview {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray-60);
+}
+
+@media (max-width: 1440px) {
+    .episodeContainer {
+        column-gap: 18px;
+        padding-block: 30px;
+    }
+
+    .episodeNumber {
+        font-size: 24px;
+    }
+
+    .episode {
+        column-gap: 18px;
+    }
+
+    .episode__content {
+        row-gap: 10px;
+    }
+
+    .episode__title {
+        font-size: 18px;
+    }
+
+    .episode__runtime {
+        font-size: 14px;
+    }
+
+    .episode__overview {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileHidden {
+        display: none;
+    }
+
+    .episodeContainer {
+        flex-flow: row-reverse wrap;
+        justify-content: space-between;
+        column-gap: 18px;
+        padding: 20px;
+        background-color: var(--color-black-08);
+        border-radius: 8px;
+    }
+
+    .episode {
+        align-items: start;
+        flex-direction: column;
+        row-gap: 18px;
+        width: fit-content;
+    }
+
+    .episode__header {
+        flex-direction: column-reverse;
+        align-items: start;
+        row-gap: 10px;
+    }
+
+    .episode__content {
+        row-gap: 10px;
+    }
+
+    .episode__title {
+        font-size: 16px;
+    }
+
+    .episode__runtime {
+        font-size: 12px;
+    }
+}

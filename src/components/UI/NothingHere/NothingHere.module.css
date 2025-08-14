@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--color-gray-60);
+}
+
+.sm,
+.md {
+    font-size: 18px;
+}
+
+.lg {
+    font-size: 22px;
+}
+
+.image {
+    height: 3em;
+    aspect-ratio: 1;
+}
+
+.md.container,
+.lg.container {
+    flex-direction: column;
+}
+
+.md .image {
+    height: 120px;
+}
+
+.lg .image {
+    height: 160px;
+}
+
+@media (max-width: 1440px) {
+    .sm,
+    .md {
+        font-size: 16px;
+    }
+
+    .lg .image {
+        height: 140px;
+    }
+
+    .lg {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .md .image {
+        height: 80px;
+    }
+
+    .lg {
+        font-size: 16px;
+    }
+}

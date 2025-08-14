@@ -1,0 +1,16 @@
+.content {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-height: 1440px) {
+    .content {
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 768px) {
+    .content {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,45 @@
+.form {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.input {
+    font-weight: 500;
+    color: var(--color-white);
+    padding-inline: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-black-12);
+    height: 100%;
+    outline: 1px solid transparent;
+    transition: outline-color var(--transition-duration),
+                width var(--transition-duration),
+                opacity var(--transition-duration);
+}
+
+.input:focus {
+    outline-color: var(--color-gray-60);
+}
+
+.inputEnter {
+    opacity: 0;
+    width: 0;
+    transform-origin: right;
+}
+
+.inputEnterActive {
+    opacity: 1;
+    width: 180px;
+}
+
+.inputExit {
+    opacity: 1;
+    width: 180px;
+    transform-origin: right;
+}
+
+.inputExitActive {
+    opacity: 0;
+    width: 0;
+}

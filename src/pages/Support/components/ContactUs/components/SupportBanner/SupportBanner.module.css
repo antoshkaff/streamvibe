@@ -1,0 +1,49 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    max-width: 533px;
+}
+
+.banner__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.banner__title {
+    font-size: 48px;
+}
+
+.banner__body {
+    border: 6px solid var(--color-black-15);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.banner__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 1440px) {
+    .banner {
+        row-gap: 40px;
+    }
+
+    .banner__header {
+        row-gap: 10px;
+    }
+
+    .banner__title {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__title {
+        font-size: 28px;
+    }
+}

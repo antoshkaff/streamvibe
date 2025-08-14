@@ -1,0 +1,35 @@
+.accent {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-white);
+    transition: color var(--transition-duration);
+    outline: none;
+    border: none;
+    column-gap: 4px;
+    height: 64px;
+    border-radius: 8px;
+    padding-inline: 24px;
+    background-color: var(--color-accent);
+}
+
+@media (max-width: 1440px) {
+    .accent {
+        font-size: 14px;
+        height: 52px;
+    }
+}
+
+@media (hover: hover) {
+    .accent:hover {
+        color: var(--color-gray-60);
+    }
+}
+
+@media (hover: none) {
+    .accent:active {
+        color: var(--color-gray-60);
+    }
+}

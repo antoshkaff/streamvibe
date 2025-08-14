@@ -1,0 +1,18 @@
+.section {
+    position: relative;
+}
+
+.pagination {
+    padding-inline: 50px;
+    width: 100%;
+    justify-content: space-between;
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+}
+
+@media (max-width: 1440px) {
+    .pagination {
+        padding-inline: 40px;
+    }
+}

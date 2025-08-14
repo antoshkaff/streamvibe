@@ -1,0 +1,16 @@
+.widget__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (max-width: 1440px) {
+    .widget__title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .widget__title {
+        font-size: 18px;
+    }
+}

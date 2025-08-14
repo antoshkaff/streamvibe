@@ -1,0 +1,47 @@
+.widget {
+    row-gap: 30px;
+}
+
+.castImageWrapper {
+    height: 109px;
+    width: 102px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.castImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide {
+    height: fit-content !important;
+    width: fit-content !important;
+}
+
+@media (max-width: 1440px) {
+    .widget {
+        row-gap: 20px;
+    }
+
+    .pagination button {
+        height: 44px;
+    }
+
+    .castImageWrapper {
+        height: 89px;
+        width: 87px;
+    }
+}
+
+@media (max-width: 768px) {
+    .widget {
+        row-gap: 16px;
+    }
+
+    .castImageWrapper {
+        height: 75px;
+        width: 70px;
+    }
+}

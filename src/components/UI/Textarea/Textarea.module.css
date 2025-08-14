@@ -1,0 +1,50 @@
+.textareaContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 20px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 8px;
+    background-color: var(--color-black-08);
+    font-size: 18px;
+    color: var(--color-white);
+    outline: 1px solid transparent;
+    transition: outline-color var(--transition-duration);
+    font-family: Manrope, sans-serif;
+}
+
+.textarea:focus {
+    outline: 1px solid var(--color-white);
+}
+
+.textarea::placeholder {
+    color: var(--color-gray-60);
+    line-height: 150%;
+}
+
+@media (max-width: 1440px) {
+    .textareaContainer {
+        row-gap: 12px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+
+    .textarea {
+        padding-inline: 16px;
+        font-size: 14px;
+    }
+}

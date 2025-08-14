@@ -1,0 +1,35 @@
+.button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    color: var(--color-white);
+    background-color: var(--color-black-10);
+    outline: 3px solid var(--color-black-15);
+    transition: color var(--transition-duration);
+}
+
+.button__icon {
+    height: 18px;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1024px) {
+    .button {
+        display: inline-flex;
+    }
+}
+
+@media (hover: hover) {
+    .button:hover {
+        color: var(--color-gray-60);
+    }
+}
+
+@media (hover: none) {
+    .button:active {
+        color: var(--color-gray-60);
+    }
+}

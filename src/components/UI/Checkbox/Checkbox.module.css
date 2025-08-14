@@ -1,0 +1,57 @@
+.checkboxWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    color: var(--color-gray-60);
+}
+
+.customBox {
+    display: inline-block;
+    height: 28px;
+    aspect-ratio: 1;
+    border: 1px solid var(--color-black-15);
+    border-radius: 4px;
+    position: relative;
+    transition: all var(--transition-duration);
+}
+
+.input:checked + .label .customBox {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.input:checked + .label .customBox::after {
+    content: '';
+    display: inline-flex;
+    height: 1em;
+    aspect-ratio: 1;
+    background: url('images/mark.svg') center/contain no-repeat;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+@media (max-width: 1440px) {
+    .customBox {
+        height: 24px;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+}

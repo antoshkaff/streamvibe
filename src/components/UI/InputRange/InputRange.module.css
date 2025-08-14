@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    position: relative;
+}
+
+.inputHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rangeLabel {
+    opacity: 0;
+    position: absolute;
+    top: calc(-100% - 28px);
+    background-color: #e50000;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    transition:
+        left 0.1s ease,
+        opacity 0.2s ease;
+}
+
+.input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+}
+
+.input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #e50000;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    transition: 0.2s;
+}
+
+.input::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: #e50000;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.input::-moz-range-track {
+    height: 6px;
+    background: #ddd;
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .label {
+        font-size: 14px;
+    }
+}
+
+@media (hover: hover) {
+    .container:hover .rangeLabel {
+        opacity: 1;
+    }
+}
+
+@media (hover: none) {
+    .container:active .rangeLabel {
+        opacity: 1;
+    }
+}

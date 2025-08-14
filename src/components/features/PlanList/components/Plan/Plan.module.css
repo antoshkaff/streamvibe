@@ -1,0 +1,148 @@
+.plan {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 12px;
+    background-color: var(--color-black-10);
+    row-gap: 50px;
+    max-width: 512px;
+}
+
+.plan__header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.plan__title,
+.plan__description {
+    line-height: 150%;
+}
+
+.plan__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.plan__description {
+    font-size: 18px;
+    color: var(--color-gray-60);
+}
+
+.price {
+    display: inline-flex;
+    align-items: end;
+    line-height: 1;
+    column-gap: 4px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.priceType {
+    font-weight: 500;
+    font-size: 0.45em;
+    color: var(--color-gray-60);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+/*.buttonSecondary {
+    height: 64px;
+    padding-inline: 35px;
+}
+
+.buttonAccent {
+    height: 64px;
+    padding-inline: 44px;
+}*/
+
+.buttonSecondary {
+    height: 64px;
+    width: 100%;
+}
+
+.buttonAccent {
+    height: 64px;
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .plan {
+        padding: 40px;
+        row-gap: 40px;
+        max-width: 413px;
+    }
+
+    .plan__header {
+        row-gap: 12px;
+    }
+
+    .plan__title {
+        font-size: 20px;
+    }
+
+    .plan__description {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 30px;
+    }
+
+    .footer {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .buttonSecondary {
+        height: 50px;
+        padding-inline: 31px;
+    }
+
+    .buttonAccent {
+        height: 50px;
+        padding-inline: 38px;
+    }
+}
+
+@media (max-width: 768px) {
+    .plan {
+        padding: 24px;
+        row-gap: 30px;
+        max-width: 358px;
+    }
+
+    .plan__header {
+        row-gap: 10px;
+    }
+
+    .plan__title {
+        font-size: 18px;
+    }
+
+    .plan__description {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .footer {
+        display: flex;
+        column-gap: 12px;
+    }
+
+    .buttonSecondary {
+        padding-inline: 25px;
+    }
+
+    .buttonAccent {
+        padding-inline: 32px;
+    }
+}

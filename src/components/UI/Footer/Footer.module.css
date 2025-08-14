@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 150px;
+    background-color: var(--color-black-06);
+    width: 100%;
+    padding-block: 100px 50px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 22px;
+}
+
+.socialMedias__list {
+    display: flex;
+    column-gap: 14px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.listTitle {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding-top: 24px;
+    column-gap: 22px;
+    border-top: 1px solid var(--color-black-15);
+}
+
+.bottomLinksContainer {
+    --column-gap: 22px;
+
+    display: flex;
+    align-items: center;
+    column-gap: var(--column-gap);
+}
+
+.bottomLink {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 400 !important;
+    position: relative;
+}
+
+.bottomLink:not(:last-of-type)::after {
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1px;
+    background-color: var(--color-black-15);
+    margin-left: var(--column-gap);
+}
+
+@media (max-width: 1440px) {
+    .footer {
+        margin-top: 120px;
+        padding-block: 80px 40px;
+    }
+
+    .footerContainer {
+        row-gap: 80px;
+    }
+
+    .socialMedias__list {
+        column-gap: 10px;
+    }
+
+    .listContainer {
+        row-gap: 20px;
+    }
+
+    .listTitle {
+        font-size: 18px;
+    }
+
+    .list {
+        row-gap: 10px;
+    }
+
+    .footer__bottom {
+        padding-top: 20px;
+    }
+
+    .bottomLinksContainer {
+        --column-gap: 16px;
+    }
+
+    .bottomLink {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        margin-top: 80px;
+        padding-block: 50px 20px;
+    }
+
+    .footerContainer {
+        row-gap: 50px;
+    }
+
+    .listContainer {
+        row-gap: 16px;
+    }
+
+    .listTitle {
+        font-size: 16px;
+    }
+
+    .list {
+        row-gap: 8px;
+    }
+}

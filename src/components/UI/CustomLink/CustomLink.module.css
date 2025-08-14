@@ -1,0 +1,60 @@
+.link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray-60);
+    transition: color var(--transition-duration);
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-white);
+    transition: color var(--transition-duration);
+    border-radius: 8px;
+    background-color: var(--color-black-06);
+    border: 1px solid var(--color-black-15);
+    height: 56px;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.button svg {
+    height: 24px;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1440px) {
+    .link {
+        font-size: 16px;
+    }
+
+    .button {
+        height: 44px;
+        aspect-ratio: 1;
+    }
+
+    .button svg {
+        height: 20px;
+        aspect-ratio: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (hover: hover) {
+    .link:hover {
+        color: var(--color-black-30);
+    }
+}
+
+@media (hover: none) {
+    .link:hover {
+        color: var(--color-black-30);
+    }
+}

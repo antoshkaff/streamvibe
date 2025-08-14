@@ -1,0 +1,43 @@
+.widget {
+    row-gap: 40px;
+}
+
+.sliderContainer {
+    width: clamp(310px, 50vw, 960px);
+}
+
+.actionsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.addButton {
+    height: 58px;
+    column-gap: 4px;
+    padding-inline: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.addButton svg {
+    height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .addButton {
+        height: 48px;
+        padding-inline: 12px;
+    }
+
+    .addButton svg {
+        height: 24px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

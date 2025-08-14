@@ -1,0 +1,156 @@
+.poster {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.imageWrapper {
+    width: 100%;
+    max-height: 1600px;
+}
+
+.imageWrapper::after {
+    content: '';
+    display: block;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to top,
+        rgba(20, 20, 20, 1) 2%,
+        rgba(20, 20, 20, 0.6) 40%,
+        rgba(20, 20, 20, 0.3) 80%,
+        rgba(20, 20, 20, 0) 100%
+    );
+    width: 100%;
+    height: 160px;
+    position: absolute;
+}
+
+.poster__image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.poster__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    left: 50%;
+    bottom: 130px;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 12px;
+    padding: 22px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px -5px var(--color-black-15);
+    backdrop-filter: blur(6px);
+}
+
+.poster__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    text-align: center;
+}
+
+.poster__actions {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.accentButton {
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.secondaryButtonsContainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.secondaryButton {
+    height: 56px;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1440px) {
+    .imageWrapper {
+        max-height: 1280px;
+    }
+
+    .poster__body {
+        row-gap: 24px;
+        bottom: 105px;
+        padding: 18px;
+    }
+
+    .poster__content {
+        row-gap: 2px;
+    }
+
+    .accentButton {
+        height: 52px;
+        padding-inline: 20px;
+    }
+
+    .secondaryButtonsContainer {
+        column-gap: 8px;
+    }
+
+    .secondaryButton {
+        height: 48px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .poster__content span {
+        display: none;
+    }
+
+    .poster__body {
+        bottom: 50px;
+    }
+
+    .poster__actions {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .poster__body {
+        bottom: 16px;
+    }
+
+    .poster__actions {
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .accentButton {
+        width: 100%;
+    }
+
+    .poster__body {
+        row-gap: 20px;
+    }
+
+    .poster {
+        height: 90vh;
+    }
+
+    .imageWrapper {
+        height: 100%;
+    }
+
+    .poster__image {
+        object-fit: cover;
+    }
+}

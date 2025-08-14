@@ -1,0 +1,120 @@
+.accordionItem {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    cursor: pointer;
+    color: var(--color-white);
+    transition: color var(--transition-duration);
+}
+
+.accordionItem__index {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 67px;
+    width: 62px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 8px;
+    background-color: var(--color-black-12);
+}
+
+.accordionItem__index span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.accordionItem__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.accordionItem__title {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 150%;
+    position: relative;
+}
+
+.accordionItem__content {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-gray-60);
+}
+
+.accordionItem__action {
+    margin-left: auto;
+}
+
+.accordionItem__action button {
+    color: inherit;
+}
+
+@media (max-width: 1440px) {
+    .accordionItem {
+        display: flex;
+        column-gap: 16px;
+    }
+
+    .accordionItem__index {
+        height: 54px;
+        width: 50px;
+    }
+
+    .accordionItem__index span {
+        font-size: 16px;
+    }
+
+    .accordionItem__title {
+        font-size: 20px;
+    }
+
+    .accordionItem__body {
+        row-gap: 14px;
+    }
+
+    .accordionItem__content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .accordionItem {
+        display: flex;
+        column-gap: 16px;
+    }
+
+    .accordionItem__index {
+        height: 46px;
+        width: 42px;
+    }
+
+    .accordionItem__index span {
+        font-size: 16px;
+    }
+
+    .accordionItem__title {
+        font-size: 18px;
+    }
+
+    .accordionItem__body {
+        row-gap: 14px;
+    }
+
+    .accordionItem__content {
+        font-size: 14px;
+    }
+}
+
+@media (hover: hover) {
+    .accordionItem:hover {
+        color: var(--color-gray-60);
+    }
+}
+
+@media (hover: none) {
+    .accordionItem:active {
+        color: var(--color-gray-60);
+    }
+}

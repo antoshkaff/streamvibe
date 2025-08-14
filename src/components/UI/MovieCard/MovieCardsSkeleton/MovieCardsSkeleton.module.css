@@ -1,0 +1,10 @@
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.item {
+    height: 500px;
+}

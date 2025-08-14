@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    padding-block: 22px;
+    top: 0;
+    left: 0;
+    position: sticky;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    z-index: 200;
+    padding-inline: var(--container-padding-inine);
+}
+
+@media (max-width: 1440px) {
+    .header {
+        padding-block: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav.header__nav,
+    div.header__actions {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-block: 40px 14px;
+    }
+}

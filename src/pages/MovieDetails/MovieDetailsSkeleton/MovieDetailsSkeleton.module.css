@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-areas:
+        'description information'
+        'cast information'
+        'reviews information';
+    gap: 30px 20px;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+}
+
+.hero {
+    height: 70vh;
+}
+
+.description {
+    height: 20vh;
+    grid-area: description;
+}
+
+.cast {
+    height: 20vh;
+    grid-area: cast;
+}
+
+.reviews {
+    height: 20vh;
+    grid-area: reviews;
+}
+
+.information {
+    grid-area: information;
+}
+
+@media (max-width: 1280px) {
+    .contentContainer {
+        grid-template-areas:
+            'description'
+            'information'
+            'cast'
+            'reviews';
+        grid-template-columns: 1fr;
+    }
+
+    .information {
+        height: 20vh;
+    }
+}

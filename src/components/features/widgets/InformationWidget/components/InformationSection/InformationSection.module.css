@@ -1,0 +1,46 @@
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.header {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.title {
+    font-size: inherit;
+    font-weight: 500;
+    color: var(--color-gray-60);
+    line-height: 150%;
+}
+
+.icon {
+    height: 1.3em;
+    aspect-ratio: 1;
+}
+
+@media (max-width: 1440px) {
+    .container {
+        row-gap: 10px;
+    }
+
+    .header {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        font-size: 14px;
+    }
+}

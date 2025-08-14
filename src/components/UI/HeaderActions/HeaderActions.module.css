@@ -1,0 +1,10 @@
+.headerActions {
+    display: flex;
+    column-gap: 30px;
+}
+
+@media (max-width: 1440px) {
+    .headerActions {
+        column-gap: 14px;
+    }
+}

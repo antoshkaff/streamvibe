@@ -1,0 +1,26 @@
+.progressBarContainer {
+    display: none;
+    height: 5px;
+    width: 80px;
+    background-color: var(--color-black-20);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progressBar {
+    height: inherit;
+    border-radius: 20px;
+    background-color: var(--color-accent);
+    transition: width var(--transition-duration);
+}
+
+@media (max-width: 768px) {
+    .progressBarContainer {
+        display: block;
+        height: 5px;
+        width: 80px;
+        background-color: var(--color-black-20);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,49 @@
+.sectionGroup {
+    --padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 12px;
+    padding: var(--padding);
+    position: relative;
+}
+
+.label {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%;
+    background-color: var(--color-accent);
+    top: -20px;
+    left: var(--padding);
+    position: absolute;
+}
+
+@media (max-width: 1440px) {
+    .sectionGroup {
+        --padding: 40px;
+
+        row-gap: 80px;
+    }
+
+    .label {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .label {
+        display: none;
+    }
+
+    .sectionGroup {
+        --padding: 0;
+
+        row-gap: 40px;
+        border: none;
+    }
+}

@@ -1,0 +1,30 @@
+.planCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 24px;
+    border: 1px solid var(--color-black-15);
+    border-radius: 12px;
+    background-color: var(--color-black-06);
+    gap: 24px 20px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.feature__name,
+.feature__content {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-gray-60);
+}
+
+.feature__content {
+    color: var(--color-white);
+}
+
+.featureWide {
+    grid-column: -1/1;
+}

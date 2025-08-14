@@ -1,0 +1,25 @@
+.filterContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    column-gap: 12px;
+}
+
+.container label {
+    font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    column-gap: 12px;
+    align-self: stretch;
+}
+
+.accentButton {
+    height: 100%;
+}

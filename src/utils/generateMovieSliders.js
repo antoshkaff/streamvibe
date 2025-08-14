@@ -1,0 +1,47 @@
+export const generateMovieSliders = (
+    moviesTrending,
+    moviesReleases,
+    moviesTopRated,
+    genres,
+    genresPopular,
+) => [
+    {
+        id: 'categories',
+        title: `Explore our wide variety of categories`,
+        items: genres,
+        variant: 'genres',
+        size: 'sm',
+        type: 'genres',
+    },
+    {
+        id: 'popular',
+        title: `Popular Top 10 In Genres`,
+        items: genresPopular,
+        variant: 'genres',
+        size: 'sm',
+        type: 'genres',
+    },
+    {
+        id: 'trending',
+        title: `Trending Now`,
+        items: moviesTrending,
+        variant: 'movie',
+        size: 'md',
+        type: 'movie',
+    },
+    {
+        id: 'releases',
+        title: `New Releases`,
+        items: moviesReleases,
+        variant: 'release',
+        size: 'md',
+        type: 'movie',
+    },
+    {
+        title: `Must - Watch Movies`,
+        items: moviesTopRated,
+        variant: 'movie',
+        size: 'lg',
+        type: 'movie',
+    },
+];

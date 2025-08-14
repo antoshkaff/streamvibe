@@ -1,0 +1,39 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.slider__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 12px;
+}
+
+.slider__description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+}
+
+.slider__body {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+    .slider {
+        row-gap: 60px;
+    }
+
+    .slider__description {
+        row-gap: 10px;
+    }
+}
