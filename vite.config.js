@@ -10,6 +10,7 @@ export default defineConfig({
             '@': path.resolve(__dirname, './src'),
         },
     },
+    base: '/streamvibe/',
     server: {
         host: true,
         port: 5173,

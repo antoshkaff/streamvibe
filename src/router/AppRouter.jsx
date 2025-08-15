@@ -12,7 +12,7 @@ import Search from '@/pages/Search/Search.jsx';
 
 const AppRouter = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/streamvibe">
             <Routes>
                 <Route element={<Layout />}>
                     <Route index element={<Home />} />
